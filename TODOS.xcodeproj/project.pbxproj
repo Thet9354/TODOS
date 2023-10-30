@@ -13,6 +13,12 @@
 		D3F845C22AEE4302005090ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F845C12AEE4302005090ED /* Preview Assets.xcassets */; };
 		D3F845C42AEE4302005090ED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F845C32AEE4302005090ED /* Persistence.swift */; };
 		D3F845C72AEE4302005090ED /* TODOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3F845C52AEE4302005090ED /* TODOS.xcdatamodeld */; };
+		D3F845CF2AEE432D005090ED /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F845CE2AEE432D005090ED /* AddToDoView.swift */; };
+		D3F845D12AEF3921005090ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F845D02AEF3921005090ED /* LaunchScreen.storyboard */; };
+		D3F845D32AEF3A28005090ED /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F845D22AEF3A28005090ED /* EmptyListView.swift */; };
+		D3F845D52AEF574D005090ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F845D42AEF574D005090ED /* SettingsView.swift */; };
+		D3F845D72AEF5993005090ED /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F845D62AEF5993005090ED /* FormRowStaticView.swift */; };
+		D3F845D92AEF5B4D005090ED /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F845D82AEF5B4D005090ED /* FormRowLinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,13 @@
 		D3F845C12AEE4302005090ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3F845C32AEE4302005090ED /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D3F845C62AEE4302005090ED /* TODOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TODOS.xcdatamodel; sourceTree = "<group>"; };
+		D3F845CE2AEE432D005090ED /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
+		D3F845D02AEF3921005090ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3F845D22AEF3A28005090ED /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		D3F845D42AEF574D005090ED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D3F845D62AEF5993005090ED /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
+		D3F845D82AEF5B4D005090ED /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
+		D3F845ED2AEFB289005090ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +68,14 @@
 		D3F845B92AEE4301005090ED /* TODOS */ = {
 			isa = PBXGroup;
 			children = (
+				D3F845ED2AEFB289005090ED /* Info.plist */,
+				D3F845CD2AEE4316005090ED /* View */,
 				D3F845BA2AEE4301005090ED /* TODOSApp.swift */,
-				D3F845BC2AEE4301005090ED /* ContentView.swift */,
 				D3F845BE2AEE4302005090ED /* Assets.xcassets */,
 				D3F845C32AEE4302005090ED /* Persistence.swift */,
 				D3F845C52AEE4302005090ED /* TODOS.xcdatamodeld */,
 				D3F845C02AEE4302005090ED /* Preview Content */,
+				D3F845D02AEF3921005090ED /* LaunchScreen.storyboard */,
 			);
 			path = TODOS;
 			sourceTree = "<group>";
@@ -71,6 +86,19 @@
 				D3F845C12AEE4302005090ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3F845CD2AEE4316005090ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3F845BC2AEE4301005090ED /* ContentView.swift */,
+				D3F845CE2AEE432D005090ED /* AddToDoView.swift */,
+				D3F845D22AEF3A28005090ED /* EmptyListView.swift */,
+				D3F845D42AEF574D005090ED /* SettingsView.swift */,
+				D3F845D62AEF5993005090ED /* FormRowStaticView.swift */,
+				D3F845D82AEF5B4D005090ED /* FormRowLinkView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F845D12AEF3921005090ED /* LaunchScreen.storyboard in Resources */,
 				D3F845C22AEE4302005090ED /* Preview Assets.xcassets in Resources */,
 				D3F845BF2AEE4302005090ED /* Assets.xcassets in Resources */,
 			);
@@ -143,7 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F845D52AEF574D005090ED /* SettingsView.swift in Sources */,
+				D3F845D72AEF5993005090ED /* FormRowStaticView.swift in Sources */,
+				D3F845D92AEF5B4D005090ED /* FormRowLinkView.swift in Sources */,
 				D3F845C42AEE4302005090ED /* Persistence.swift in Sources */,
+				D3F845CF2AEE432D005090ED /* AddToDoView.swift in Sources */,
+				D3F845D32AEF3A28005090ED /* EmptyListView.swift in Sources */,
 				D3F845BD2AEE4301005090ED /* ContentView.swift in Sources */,
 				D3F845BB2AEE4301005090ED /* TODOSApp.swift in Sources */,
 				D3F845C72AEE4302005090ED /* TODOS.xcdatamodeld in Sources */,
@@ -283,11 +317,12 @@
 				DEVELOPMENT_TEAM = K8FKWBYV9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TODOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,11 +347,12 @@
 				DEVELOPMENT_TEAM = K8FKWBYV9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TODOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
